@@ -52,19 +52,30 @@
 
         <em>Text with Dotted Border</em>
         <style>
-                .bordered {
-                  width: 200px;
-                  height: 100px;
-                  padding: 20px;
-                  border: 5px dotted black;
-                }
-              </style>
+            .bordered {
+                width: 200px;
+                height: 100px;
+                padding: 20px;
+                border: 5px dotted black;
+            }
+        </style>
               
         <div class = "bordered">
         This is a text message with a border that uses dotted lines.
         </div><br>
 
         <em>Place Text Over Image</em>
+        <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;}
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);}
+        </style>
         <div class = "container">
             <img src = "https://www.gettyimages.com/gi-resources/images/CreativeLandingPage/HP_Sept_24_2018/CR3_GettyImages-159018836.jpg" style = "width:60%;">
             <div class = "centered">Centered</div>
