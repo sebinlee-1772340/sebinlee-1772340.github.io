@@ -3,18 +3,19 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Job Application</title>
+	<title>HIHIM Application for Autumn 2019</title>
 </head>
 <body>
 
-<h2>Job Application</h2>
+<h2>2019 Application for Program Admission - Degree
+<br>Health Informatics and Health Information Mamnagement</h2>
 
 <form action="http://gclass.alexburner.com/formtest.php" method="post">
 
 	<fieldset>
-		<legend>Account</legend>
+		<legend>Sign-In to Account</legend>
 		<div class="field">
-			<label>Email:</label> 
+			<label>UW NetID:</label> 
 			<input type="text" name="email">
 		</div>
 		<div class="field">
@@ -28,7 +29,7 @@
 	</fieldset>
 
 	<fieldset>
-		<legend>Personal Information</legend>
+		<legend>Contact Information</legend>
 		<div class="field">
 			<label>First Name:</label> 
 			<input type="text" name="firstname">
@@ -38,14 +39,34 @@
 			<input type="text" name="lastname">
         </div>
         <div class="field">
+            <label>Middle Initial:</label> 
+            <input type="text" name="middlename">
+        </div>
+        <div class="field">
+            <label>Preferred Name:</label> 
+            <input type="text" name="preferredname">
+        </div><br>
+        <div class="field">
 			<label>Gender:</label> 
 			<input type="radio" name="gender" value="female">Female
 			<input type="radio" name="gender" value="male">Male
-		</div>
+        </div>
+        <div class="field">
+            <label>Date of Birth:</label> 
+            <input type="text" name="birth">
+        </div>
+        <div class="field">
+            <label>Social Security:</label> 
+            <input type="text" name="socialsecurity">
+        </div><br>
 		<div class="field">
 			<label>Street Address:</label> 
 			<input type="text" name="street">
-		</div>
+        </div>
+        <div class="field">
+            <label>Apartment Number:</label> 
+            <input type="text" name="aptnumber">
+        </div>
 		<div class="field">
 			<label>City:</label> 
 			<input type="text" name="city">
@@ -112,14 +133,43 @@
 			<input type="text" name="zip">
         </div>
         <div class="field">
+            <label>Country:</label> 
+            <input type="text" name="country">
+        </div><br>
+        
+        <div class="field">
             <label>Cell Phone:</label>
             <input type="text" name="phonenumber">
         </div>
+        <div class="field">
+            <label>UW Email:</label>
+            <input type="text" name="uwemail">
+        </div>
+        <div class="field">
+            <label>Personal Email:</label>
+            <input type="text" name="personalemail">
+        </div>
 	</fieldset>
-
 
     <fieldset>
         <legend>Educational Experience</legend>
+		<div class="field">
+            <label>Have you attended the University of Washington?</label> 
+            <input type="radio" name="legal" value="yes">Yes
+            <input type="radio" name="legal" value="no">No
+        </div>
+        <div class="field">
+            <label>If yes, which campuses? (check all that apply)</label>
+            <ul>
+                <ui><input type="checkbox" name="bothell" value="bothell">Bothell</ui>
+                <ui><input type="checkbox" name="seattle" value="seattle">Seattle</ui>
+                <ui><input type="checkbox" name="tacoma" value="tacoma">Tacoma</ui>
+            </ul>
+        </div>
+        <div class="field">
+            <label>Student ID:</label>
+            <input type="text" name="studentid">
+        </div><br>
         <div class="field">
             <label>What is the highest level completed?</label>
             <select name="education">
@@ -139,28 +189,24 @@
             <input type="text" name="highschoolname">
         </div>
         <div class="field">
-            <label>Name of Current Institution:</label>
-            <input type="text" name="currentinstitution">
-        </div>
-        <div class="field">
-            <label>Cumulative GPA:</label>
+            <label>UW Cumulative GPA:</label>
             <input type="text" name="gpa">
         </div>
         <div class="field">
-            <label>Major:</label>
+            <label>Graduation Year:</label>
             <input type="text" name="major">
         </div>
     </fieldset>
 
 	<fieldset>
-		<legend>Availability</legend>
+		<legend>Questions</legend>
 		<div class="field">
 			<label>Are you legally able to be employed in this country?</label> 
 			<input type="radio" name="legal" value="yes">Yes
 			<input type="radio" name="legal" value="no">No
         </div>
         <div class="field">
-			<label>Have you ever worked for this company?</label> 
+			<label>Upon graduation, do your current plans include working in another country?</label> 
 			<input type="radio" name="legal" value="yes">Yes
 			<input type="radio" name="legal" value="no">No
         </div>
@@ -170,16 +216,18 @@
 			<input type="radio" name="legal" value="no">No
 		</div><br>
 		<div class="field">
-			<label>What type of position are you seeking? (check all that apply)</label>
+			<label>What is your residency status? (check all that apply)</label>
 			<ul>
-				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
-				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
-				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
-				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
-			</ul>
+				<ui><input type="checkbox" name="citizen" value="citizen">U.S. Citizen</ui><br>
+				<ui><input type="checkbox" name="nonus" value="nonus">Non-U.S. Citizen</ui><br>
+				<ui><input type="checkbox" name="international" value="international">International Student</ui><br>
+				<ui><input type="checkbox" name="resalien" value="resalien">Res. Alien / Immigrant / Refugee</ui><br>
+                <ui><input type="checkbox" name="waresident" value="waresident">WA State Resident</ui><br>
+                <ui><input type="checkbox" name="other" value="other">Other</ui>
+            </ul>
 		</div>
 		<div class="field">
-			<label>Hours available</label>
+			<label>Hours Preference of Classes:</label>
 			<table>
 				<tr>
 					<td></td>
@@ -218,11 +266,11 @@
 	<fieldset>
 		<legend>Personal Statement</legend>
 		<div class="field">
-			<label>Why do you deserve this job?</label><br>
+			<label>Explain why you are interested in the program in terms of your career goals.</label><br>
 			<textarea name="deserve" rows="6" cols="60"></textarea>
 		</div>
 		<div class="field">
-			<label>Describe a recent project:</label><br>
+			<label>Explain why you think health informatics are critical skills in healthcare.</label><br>
 			<textarea name="project" rows="6" cols="60"></textarea>
 		</div>
 	</fieldset>
